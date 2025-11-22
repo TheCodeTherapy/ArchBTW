@@ -1,2 +1,15 @@
 [$Version]
 update_info=kwinrules.upd:replace-placement-string-to-enum,kwinrules.upd:use-virtual-desktop-ids
+
+[22dbfff5-40aa-420d-911f-1c4afe495a9b]
+Description=Ghostty
+position=7563,21
+positionrule=3
+size=1377,1354
+sizerule=3
+wmclass=com.mitchellh.ghostty
+wmclassmatch=1
+
+[General]
+count=1
+rules=22dbfff5-40aa-420d-911f-1c4afe495a9b
