@@ -24,8 +24,7 @@ fi
 # Tmux stuff
 start_tmux() {
   if [[ -n "$TMUX" && -z "$1" ]]; then
-    # echo && neofetch
-    echo
+    echo && fastfetch
     return
   fi
 
@@ -42,8 +41,7 @@ start_tmux() {
   fi
 }
 # start_tmux "$@"
-# clear && echo && echo && echo && neofetch
-clear && echo
+clear && echo && fastfetch
 
 if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
   source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
