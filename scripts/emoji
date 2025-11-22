@@ -5,9 +5,9 @@
 # Emoji Picker - Wayland Version using wofi
 #=============================================================================
 
-EMOJIS="${HOME}/ArchBTW/dotfiles/emoji/emoji.txt"
-THEME="${HOME}/ArchBTW/dotfiles/wofi/style.css"
-CONF="${HOME}/ArchBTW/dotfiles/wofi/config"
+EMOJIS="/home/marcogomez/ArchBTW/dotfiles/emoji/emoji.txt"
+THEME="/home/marcogomez/ArchBTW/dotfiles/wofi/style.css"
+CONF="/home/marcogomez/ArchBTW/dotfiles/wofi/config"
 
 # Validate required files
 [ ! -f "$EMOJIS" ] && notify-send -a "Emoji Picker" "Missing emoji file: $EMOJIS" --expire-time=3000 && exit 1
