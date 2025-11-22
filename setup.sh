@@ -236,6 +236,7 @@ link_dotfiles() {
     ["${DOTDOT}/vscode/settings.json"]="$target_config/Code/User/settings.json"
     ["${DOTDOT}/vscodium/settings.json"]="$target_config/VSCodium/User/settings.json"
     ["${DOTDOT}/kwin/kwinrc"]="$target_config/kwinrc"
+    ["${DOTDOT}/kwin/kcminputrc"]="$target_config/kcminputrc"
     ["${DOTDOT}/kwin/kwinrulesrc"]="$target_config/kwinrulesrc"
     ["${DOTDOT}/pipewire"]="$target_config/pipewire"
     ["${DOTDOT}/wireplumber"]="$target_config/wireplumber"
@@ -246,6 +247,7 @@ link_dotfiles() {
     ["${DOTDOT}/ghostty"]="$target_config/ghostty"
     ["${DOTDOT}/local/share/ghostty"]="$target_local_share/ghostty"
     ["${DOTDOT}/local/share/applications"]="$target_local_share/applications"
+    ["${DOTDOT}/local/share/applications/mimeapps.list"]="$target_config/mimeapps.list"
     ["${DOTDOT}/scummvm"]="$target_config/scummvm"
     ["${DOTDOT}/mame"]="$target_home/.mame"
     ["${DOTDOT}/darkplaces"]="$target_home/.darkplaces"
@@ -336,7 +338,6 @@ post_install() {
   systemctl --user daemon-reexec
   systemctl --user daemon-reload
   systemctl --user enable --now virtual-mic.service
-  # xdg-mime default org.kde.dolphin.desktop inode/directory application/x-directory
   sudo loginctl enable-linger $USER
 }
 
