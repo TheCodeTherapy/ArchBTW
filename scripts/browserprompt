@@ -6,10 +6,9 @@
 #=============================================================================
 
 OPTIONS="$(cat <<EOF
-Brave;BRAVE_DISABLE_KEYCHAIN=1 brave --password-store=basic 
-Brave (WebGPU);BRAVE_DISABLE_KEYCHAIN=1 brave --enable-unsafe-webgpu --enable-features=Vulkan --password-store=basic 
-Brave (Private);BRAVE_DISABLE_KEYCHAIN=1 brave --incognito --password-store=basic 
-Google Chrome (WebGPU);google-chrome-stable --enable-unsafe-webgpu --enable-features=Vulkan
+Brave;brave
+Brave (Private);brave --incognito
+Google Chrome (WebGPU);google-chrome-stable --enable-unsafe-webgpu --enable-features=Vulkan --ozone-platform=x11
 Google Chrome (No Framerate Cap);google-chrome-stable --disable-frame-rate-limit --disable-gpu-vsync --max-gum-fps=\"9999\"
 Firefox;firefox
 EOF

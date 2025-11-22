@@ -1,0 +1,7 @@
+[Desktop Entry]
+Exec=/home/marcogomez/ArchBTW/scripts/browserprompt
+Name=browserprompt
+NoDisplay=true
+StartupNotify=false
+Type=Application
+X-KDE-GlobalAccel-CommandShortcut=true
