@@ -157,7 +157,7 @@ install_base_packages() {
     python-pynvim bzip2 zlib plocate sdl sdl2 fluidsynth timidity++ glew
     mpg123 noto-fonts-emoji btop libjpeg-turbo libgme libsndfile libvpx
     flatpak cloudflared github-cli docker docker-compose ffmpeg yt-dlp
-    nvidia-container-toolkit firefox discord v4l2loopback-dkms 
+    nvidia-container-toolkit firefox discord v4l2loopback-dkms usbutils
     obs-studio ardour wofi wl-clipboard fastfetch
   )
 
