@@ -158,7 +158,7 @@ install_base_packages() {
     mpg123 noto-fonts-emoji btop libjpeg-turbo libgme libsndfile libvpx
     flatpak cloudflared github-cli docker docker-compose ffmpeg yt-dlp
     nvidia-container-toolkit firefox discord v4l2loopback-dkms usbutils
-    obs-studio ardour wofi wl-clipboard fastfetch
+    obs-studio ardour wofi wl-clipboard fastfetch vlc vlc-plugin-ffmpeg
   )
 
   for package in "${packages[@]}"; do
